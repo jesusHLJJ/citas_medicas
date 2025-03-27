@@ -1,0 +1,56 @@
+main{
+    margin: 0;
+}
+
+body{
+    background-image: url(36be65ae45d353621dfd0a70a9e55277.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column; /* Opcional: si quieres apilar los elementos internos verticalmente */
+    justify-content: center; /* Centrado vertical */
+    align-items: center; /* Centrado horizontal */
+    width: 300px; /* Ancho deseado */
+    height: 400px; /* Alto deseado */
+    margin: 0 auto; /* Centrado horizontal alternativo */
+}
+
+.contenido{
+    font-size: 20px;
+    color: blanchedalmond;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.elemento{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+#nombre{
+    width: 200px;
+}
+
+input{
+    height: 30px;
+}
+
+#boton{
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+    color: white;
+}
+
+#boton:hover{
+    background-color: aquamarine;
+    color: black;
+    cursor: pointer;
+}
