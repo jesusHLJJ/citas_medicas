@@ -1,56 +1,64 @@
 main{
     margin: 0;
+    padding: 0;
 }
 
 body{
-    background-image: url(36be65ae45d353621dfd0a70a9e55277.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+}
+.menu{
+    background-color: rgba(97,14,49,255);
+}
+.logo{
+    height: 150px;
+}
+.imagen{
+    height: 100%;
 }
 
-.formulario{
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: column; /* Opcional: si quieres apilar los elementos internos verticalmente */
-    justify-content: center; /* Centrado vertical */
-    align-items: center; /* Centrado horizontal */
-    width: 300px; /* Ancho deseado */
-    height: 400px; /* Alto deseado */
-    margin: 0 auto; /* Centrado horizontal alternativo */
+.encabezado{
+    background-color: rgb(209, 149, 19);
+    height: 100px;
 }
-
-.contenido{
-    font-size: 20px;
-    color: blanchedalmond;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.elemento{
-    margin-bottom: 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-#nombre{
-    width: 200px;
-}
-
-input{
-    height: 30px;
-}
-
-#boton{
-    background-color: blueviolet;
-    border-radius: 10px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 35px;
+.titulo{
+    margin: 0;
+    padding: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 44px;
     color: white;
 }
 
-#boton:hover{
-    background-color: aquamarine;
-    color: black;
-    cursor: pointer;
+.lista_doctores{
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.doctores{
+    margin-top: 50px;
+    height: 40%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.151);
+    display: flex;
+    flex-direction: row;
+}
+.datos{
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.foto{
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 80%;
+    width: 50%;
+}
+.foto_doctor{
+    width: 80%;
+    height: 100%;
+    padding-left: 35px;
 }
