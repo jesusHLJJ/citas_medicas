@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HACER CITA</title>
+  </head>
+  <body>
+    <div class="menu">
+      <div class="logo">
+        <img src="public/gob-logo.png" alt="logo_edomex" class="imagen" />
+      </div>
+
+      <div class="usuario"></div>
+    </div>
+
+    <div class="encabezado">
+      <h2 class="titulo">HACER CITA</h2>
+    </div>
+
+    <div class="formulario_hacer_cita">
+      <h1>Formulario</h1>
+      <form>
+        <div class="elementos">
+          <label for="nombre_paciente">NOMBRE: </label>
+          <input type="text" id="nombre_paciente" />
+        </div>
+        <div class="elementos">
+          <label for="especialidad">ESPECIALIDAD: </label>
+          <select id="especialidad">
+            <option value="#">Cardiología</option>
+            <option value="#">Pediatría</option>
+            <option value="#">Dermatología</option>
+            <option value="#">Odontología</option>
+            <option value="#">Oftalmología</option>
+            <option value="#">Psiquiatría</option>
+            <option value="#">Ginecología</option>
+            <option value="#">Traumatología</option>
+          </select>
+        </div>
+        <div class="elementos">
+          <label for="nombre_doctor">DOCTOR: </label>
+          <select id="nombre_doctor">
+            <option value="">Mauricio Hernandez Gonzalez</option>
+            <option value="">Gabriel Sánchez Poyal</option>
+            <option value="">Javier Bonet González</option>
+            <option value="">Lucas Lautaro Helou</option>
+            <option value="">Pedro Elias Aquino Cova</option>
+            <option value="">Valentín Oliva</option>
+          </select>
+        </div>
+        <div class="elementos">
+          <label for="horario">HORARIO: </label>
+          <select id="horaro">
+            <option value="#">9:00 hrs</option>
+            <option value="#">10:00 hrs</option>
+            <option value="#">11:00 hrs</option>
+            <option value="#">12:00 hrs</option>
+            <option value="#">13:00 hrs</option>
+            <option value="#">14:00 hrs</option>
+          </select>
+        </div>
+        <div class="elementos">
+          <label for="dia">DIA: </label>
+          <input type="date" id="dia" />
+        </div>
+
+        <div class="elementos">
+            <input type="submit" value="Aceptar" id="agendar_cita" />
+            <input type="submit" value="Cancelar" id="cancelar_cita" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
