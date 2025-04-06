@@ -1,0 +1,26 @@
+  #btn{
+    width:200px; 
+    height:40px; 
+    text-align:center;
+    font-weight:700;
+    color: #FFF;
+    background-color: #93ecee; 
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #93ecee, #38dfe0, #26da3e, #108c2b);
+}
+.formulario{
+    width:800px;
+    height:300px;
+    background: rgb(149, 149, 162);
+    color: azure;
+    border-radius:5%;
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+}
+
+.input{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
