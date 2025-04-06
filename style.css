@@ -62,3 +62,41 @@ body{
     height: 100%;
     padding-left: 35px;
 }
+
+
+
+
+
+/*FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> */
+.formulario_hacer_cita{
+    margin: auto;
+    width: 700px;
+    text-align: center;
+   font-weight: bold;
+   font-size: 20px;
+}
+
+.formulario_hacer_cita form{
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.formulario_hacer_cita .elementos{
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 50px;
+}
+
+.formulario_hacer_cita .elementos input,
+.formulario_hacer_cita .elementos select {
+    width: 70%;
+    font-size: 20px;
+}
+
+.formulario_hacer_cita .elementos #agendar_cita,
+.formulario_hacer_cita .elementos #cancelar_cita{
+    margin: auto;
+    width: 40%;
+}
+/*FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> */
