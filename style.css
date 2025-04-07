@@ -62,7 +62,6 @@ body{
     padding-right: 10px;
     width: 50%;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
 }
 .foto{
     padding-top: 25px;
@@ -74,41 +73,5 @@ body{
 .foto_doctor{
     width: 290px;
     height: 100%;
-    padding-left: 51px;
-}
-
-/* Estilos responsive para dispositivos con resolucion minima de 950 */
-@media screen and (min-width: 950px) {
-    .datos{
-        font-size: 18px;
-    }
-    .foto_doctor{
-        width: 300px;
-        padding-left: 51px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    .doctores{
-        height: 40%;
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-
-    }
-    .datos{
-        width: 40%;
-        font-size: 20px;
-        padding-top: 30px;
-        padding-left: 70px;
-        padding-right: 0;
-    }
-    .foto{
-        width: 40%;
-    }
-    .foto_doctor{
-        width: 290px;
-        padding-left: 120px;
-    }
+    padding-left: 35px;
 }
