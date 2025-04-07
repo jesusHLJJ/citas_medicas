@@ -1,0 +1,120 @@
+main {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu {
+  background-color: rgba(97, 14, 49, 255);
+}
+.logo {
+  height: 150px;
+}
+.imagen {
+  height: 100%;
+}
+
+.encabezado {
+  background-color: rgb(209, 149, 19);
+  height: 100px;
+}
+.titulo {
+  margin: 0;
+  padding: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 44px;
+  color: white;
+}
+
+.lista_doctores {
+  height: 630px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.doctores {
+  margin-top: 50px;
+  height: 40%;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0.151);
+  display: flex;
+  flex-direction: row;
+}
+.datos {
+  padding-top: 45px;
+  padding-left: 20px;
+  padding-right: 10px;
+  width: 50%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+.foto {
+  padding-top: 25px;
+  padding-left: 10px;
+  padding-right: 20px;
+  height: 80%;
+  width: 50%;
+}
+.foto_doctor {
+  width: 80%;
+  height: 100%;
+  padding-left: 35px;
+}
+
+/*FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> */
+.formulario_hacer_cita { /*Ajustes generales del formulario "HACER_CITA"*/
+  margin: auto;
+  width: 700px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.formulario_hacer_cita form { /*Configurar los elementos con FLEX*/
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario_hacer_cita .elementos { /*Espaciado entre elementos*/
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.formulario_hacer_cita .elementos input,
+.formulario_hacer_cita .elementos select { /*Manejo del tamaño de las etiquetas input y select*/
+  width: 70%;
+  font-size: 20px;
+}
+
+.formulario_hacer_cita .elementos #agendar_cita, /*Botones "Aceptar" y "Cancelar"*/
+.formulario_hacer_cita .elementos #cancelar_cita {
+  margin: auto;
+  width: 40%;
+  color: white;
+  font-weight: bold;
+}
+
+.formulario_hacer_cita .elementos #agendar_cita{/*Color de botones "Aceptar" y "Cancelar"*/
+    background-color: rgb(0, 255, 47);
+} 
+.formulario_hacer_cita .elementos #cancelar_cita {/*Color de botones "Aceptar" y "Cancelar"*/
+  background-color: red;
+}
+
+/* RESPONSIVE PC */
+@media screen and (min-width: 1000px) {
+  .formulario_hacer_cita {
+    width: 90%;
+    font-size: 30px;
+  }
+
+  .formulario_hacer_cita .elementos input,
+  .formulario_hacer_cita .elementos select {
+    width: 70%;
+    font-size: 30px;
+  }
+}
+/*FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> FORMULARIO HACER_CITA <-> */
