@@ -7,14 +7,27 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/* Estilos para dispositivos movil con resolucion minima de 768 */
 .menu{
     background-color: rgba(97,14,49,255);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .logo{
     height: 150px;
 }
 .imagen{
     height: 100%;
+}
+.usuario{
+    height: 150px;
+}
+.user{
+    height: 100px;
+    padding-top: 25px;
+    padding-right: 30px;
 }
 
 .encabezado{
@@ -24,7 +37,7 @@ body{
 .titulo{
     margin: 0;
     padding: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 44px;
     color: white;
 }
@@ -48,7 +61,8 @@ body{
     padding-left: 20px;
     padding-right: 10px;
     width: 50%;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Montserrat', serif;
+    font-size: 15px;
 }
 .foto{
     padding-top: 25px;
@@ -58,7 +72,177 @@ body{
     width: 50%;
 }
 .foto_doctor{
-    width: 80%;
+    width: 290px;
     height: 100%;
-    padding-left: 35px;
+    padding-left: 51px;
+}
+
+/*CITAS PROGRAMADAS*/
+.datos_ficha{
+    padding-top: 45px;
+    padding-left: 20px;
+    padding-right: 10px;
+    width: 50%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Montserrat', serif;
+    font-size: 15px;
+}
+.Doc_name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.foto_doc {
+    padding-top: 25px;
+    padding-left: 10px;
+    padding-right: 20px;
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.foto_doctorn {
+    width: 250px;
+    height: 70%;
+    padding-left: 0; 
+    transition: 4s;
+}
+
+.foto_doctorn:hover{
+	transform: scale(1.1);
+    transition: 4s;
+}
+
+
+.info_cita{
+    margin-top: 50px;
+    height: 40%;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.151);
+    display: flex;
+    flex-direction: row;
+}
+
+.citas_programadas{
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.botones_cita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; 
+    margin-top: 10px;
+}
+.btn_cancelar_cita:hover{
+    transform: scale(1.1);
+    transition: 4s;
+}
+.btn_reagendar_cita:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+.btn_cancelar_cita,
+.btn_reagendar_cita {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 12px; 
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+
+.btn_cancelar_cita {
+    background-color: red;
+    color: white;
+}
+
+.btn_reagendar_cita {
+    background-color: green;
+    color: white;
+}
+
+
+/* Estilos responsive para dispositivos con resolucion minima de 950 */
+@media screen and (min-width: 950px) {
+    .datos{
+        font-size: 18px;
+    }
+    .foto_doctor{
+        width: 300px;
+        padding-left: 51px;
+    }
+    /*citas programdas*/
+    .datos_ficha{
+        font-size: 18px;
+    }
+    .foto_doc{
+        width: 300px;
+        padding-left: 51px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .doctores{
+        height: 40%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+    }
+    .datos{
+        width: 40%;
+        font-size: 20px;
+        padding-top: 30px;
+        padding-left: 70px;
+        padding-right: 0;
+    }
+    .foto{
+        width: 40%;
+    }
+    .foto_doctor{
+        width: 290px;
+        padding-left: 120px;
+    }
+
+    /*citas*/
+    .citas_programadas{
+        height: 40%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .datos_ficha{
+        width: 40%;
+        font-size: 20px;
+        padding-top: 30px;
+        padding-left: 70px;
+        padding-right: 0;
+    }
+
+    .foto_doc {
+        width: 100%; 
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        padding: 10px 0;
+        text-align: center;
+    }
+    .foto_doctorn {
+        width: 250px;
+        max-width: 90%; 
+        padding-left: 0; 
+    }
+    .Doc_name {
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 0;
+    }
 }
