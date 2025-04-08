@@ -3,21 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <link rel="stylesheet" href="styles\style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Citas Médicas - Gobierno de México</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="menu">
+      <div class="logo">
+        <img src="public/gob-logo.png" alt="logo_edomex" class="imagen">
+      </div>
+      <div class="usuario">
+      </div>
+    </div>
+  
+    <div class="encabezado">
+      <h2 class="titulo">CITAS MÉDICAS</h2>
+    </div>
+  
+    <div class="grid-container">
+      <div class="card">
+        <div class="card-title">NUESTRA LISTA DE DOCTORES</div>
+        <div class="card-text_1">
+          <img src="/public/doctor_home.png" alt="doctor">
+          <a href="lista_doctores.html" class="referencia">CONOCE A NUESTROS MÉDICOS, SUS ESPECIALIDADES Y SUS HORARIOS</a>
+        </div>
+      </div>
 
-    <h1>Mi nombre es: el avatar</h1>
-    <form action="" class="formulario">
-        <label for="">Nombre:</label>
-        <input type="text" class="input">
-        <label for="">Contraseña:</label>
-        <input type="password" class="input">
-        <input type="submit" id="btn">
-    </form>
+      <div class="card">
+        <div class="card-title">VER CITA PROGRAMADA</div>
+        <div class="card-text">
+          <a href="CITAS_PROGRAMADAS.html"> <img src="/public/buscar.png" alt="ver cita"></a>
+         
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-title">PROGRAMAR CITA</div>
+        <div class="card-text">
+          <a href="hacer_cita.html"><img src="/public/calendario.png" alt="calendar"></a>
+        </div>
+      </div>
+  
+      <div class="card">
+        <div class="card-title">ACERCA DE NOSOTROS</div>
+        <div class="card-text">
+          <a href="acerca_de.html" class="referencia">LEE ACERCA DE NUESTRO OBJETIVO</a>
+        </div>
+      </div>
+    </div>
+
     <!-- 
     <img src="https://images.justwatch.com/poster/243988114/s718/avatar-la-leyenda-de-aang.jpg" alt="">
     -->  
