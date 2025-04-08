@@ -252,9 +252,8 @@ body {
     color: white;
 }
 
-
-/*HOME*/
-.grid-container {
+/* HOME */
+#grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -278,18 +277,19 @@ body {
   margin-bottom: 15px;
 }
 
-.card-text_1 {
+#card-text-doctores {
   background-color: #ddd;
   color: black;
   padding: 10px;
   border-radius: 5px;
   font-size: 14px;
   display: flex;
-  flex-direction: row; /* Ahora va en fila: imagen + texto */
+  flex-direction: row;
   align-items: center;
   text-align: left;
-  gap: 10px; /* espacio entre imagen y texto */
+  gap: 10px;
 }
+
 .card-text {
   background-color: #ddd;
   color: black;
@@ -302,20 +302,20 @@ body {
   text-align: center;
 }
 
+.card-text img,
+#card-text-doctores img {
+  width: 50px;
+  height: 50px;
+  background: transparent;
+}
+
 .card-text img {
-  width: 50px;
-  height: 50px;
   margin-bottom: 10px;
-  background: transparent;
 }
 
-.card-text_1 img {
-  width: 50px;
-  height: 50px;
-  background: transparent;
-  flex-shrink: 0; /* evita que la imagen se achique si el texto es largo */
+#card-text-doctores img {
+  flex-shrink: 0;
 }
-
 
 .profile-icon {
   width: 30px;
@@ -324,6 +324,7 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
+
 
 /*ACERCA DE*/
 .datos_acerca {
@@ -360,21 +361,21 @@ body {
         width: 300px;
         padding-left: 51px;
     }
-        /*HOME*/
-        .grid-container {
-          grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
-          padding: 20px;
-          gap: 20px;
-        }
-      
-        .card {
-          width: 90%; /* Se adapta mejor al ancho del contenedor */
-        }
-      
-        .card-text_1 {
-          flex-direction: column;
-          text-align: center;
-        }
+    /* HOME */
+    #grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .card {
+      width: 90%; /* Se adapta mejor al ancho del contenedor */
+    }
+
+    #card-text-doctores {
+      flex-direction: column;
+      text-align: center;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -435,31 +436,31 @@ body {
         margin-bottom: 10px;
         padding-left: 0;
     }
-        /*HOME*/
-        .grid-container {
-          grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
-          gap: 40px;
-          padding: 60px;
-        }
-      
-        .card {
-          width: 320px;
-        }
+    /* HOME */
+    #grid-container {
+      grid-template-columns: repeat(2, 1fr); /* 2 tarjetas por fila */
+      gap: 40px;
+      padding: 60px;
+  }
+
+  .card {
+      width: 320px;
+  }
 }
 
 
 /*HOME*/
 @media screen and (min-width: 800px) and (max-width: 999px) {
-  .grid-container {
+  #grid-container {
     margin-top: 10%;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
-  }
+}
 
-  .card {
+.card {
     width: 90%;
-  }
+}
 }
 /*ACERCA DE*/
 @media screen and (max-width: 1700px) {
